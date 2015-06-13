@@ -9,7 +9,7 @@ echo "deb http://tinyprod.net/repos/debian squeeze main" >> /etc/apt/sources.lis
 apt-get update
 
 # install tinyos-tools
-apt-get install -y --force-yes nesc tinyos-tools msp430-tinyos avr-tinyos automake libtool
+apt-get install -y --force-yes make nesc tinyos-tools msp430-tinyos avr-tinyos automake libtool
 
 echo "source /vagrant/tinyos-2.1.1/tinyos.sh" >> /home/vagrant/.bashrc
 
