@@ -24,7 +24,7 @@ Once the machine is up, connect using
 
     vagrant ssh
 
-Note: Windows is not shipped with an ssh client, so you'll nee a third party application (i.e. putty). Check out the following link for accessing it: https://github.com/Varying-Vagrant-Vagrants/VVV/wiki/Connect-to-Your-Vagrant-Virtual-Machine-with-PuTTY
+Note: Windows is not shipped with a ssh client, so you'll nee a third party application (i.e. putty). Check out the following link for accessing it: https://github.com/Varying-Vagrant-Vagrants/VVV/wiki/Connect-to-Your-Vagrant-Virtual-Machine-with-PuTTY
 
 ### Start the virtual environment UI
 The `vagrant ssh` will actually log you into the virtual environment. If you want to start the environment the traditional way using the virtual machine window, change the `Vagrantfile` parameter `v.gui` from  `v.gui = false` to  `v.gui = true` and start the machine again.
@@ -67,4 +67,4 @@ Troubleshooting
 -----
 I focussed on IPv6 using blip. If there are some troubles with XM1000 make sure you have added `defined(PLATFORM_XM1000)` in the code. XM1000 follow the telosb specs, so it works usually if you add it as follows:
 
-    #elif defined(PLATFORM_TELOS) || defined(PLATFORM_TELOSB) || defined(PLATFORM_EPIC) || defined(PLATFORM_XM1000)
+    #elif defined(PLATFORM_TELOS) || defined(PLATFORM_TELOSB) ... || defined(PLATFORM_XM1000)
